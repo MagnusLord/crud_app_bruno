@@ -4,37 +4,37 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ClienteController extends Controller
+class AlunosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $consumers = [
+        $alunos = [
             [
-                'id'             => 1,
-                'nome'           => 'Ana Souza',
-                'cpf'            => '123.456.789-00',
-                'rg'             => '12.345.678-9',
-                'sexo'           => 'F',
-                'data_nascimento' => '1985-05-15',
-                'celular'        => '(11) 98765-4321',
-                'email'          => 'ana.souza@example.com'
+                
+                'nome'           => 'Bruno Gomes',
+                'idade'            => '17',
+                'sexo'             => 'M',
+                'cpf'           => '06676761203',
+                'rg' => '6653377712',
+                'email'        => 'brunogtrindade598@gmail.com',
+                'senha'          => '12345678910'
             ],
             [
-                'id'             => 2,
-                'nome'           => 'Carlos Silva',
-                'cpf'            => '987.654.321-00',
-                'rg'             => '98.765.432-1',
-                'sexo'           => 'M',
-                'data_nascimento' => '1990-08-20',
-                'celular'        => '(21) 99876-5432',
-                'email'          => 'carlos.silva@example.com'
+                
+                'nome'           => 'Roberto Deide Costa',
+                'idade'            => '45',
+                'sexo'             => 'M',
+                'cpf'           => '13400798952',
+                'rg' => '9732894521',
+                'email'        => 'betaodeidecosta666@gmail.com',
+                'senha'          => '4433222566677'
             ]
         ];
 
-        return view('ListaConsumidores', compact('consumers'));
+        return view('ListaConsumidores', compact('alunos'));
     }
 
 
